@@ -6,9 +6,11 @@ This is a starting point for running
 
 ## Features
 
-* Automatic database configuration via dj_database_url
+* Automatic database configuration via
+  [dj-database-url](https://github.com/kennethreitz/dj-database-url "dj-database-url")
 * SENTRY_KEY set via environment variable
-* Emails stored in database via django-database-email-backend
+* Emails stored in database via
+  [django-database-email-backend](https://github.com/stefanfoulis/django-database-email-backend "django-database-email-backend")
 
 ## To do
 
