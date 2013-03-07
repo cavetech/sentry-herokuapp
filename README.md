@@ -12,6 +12,7 @@ $ cd sentry-herokuapp
 $ heroku create your-sentry
 $ heroku addons:add heroku-postgresql:dev
 $ heroku pg:promote $(heroku config -s | awk -F= '$1 ~ /^HEROKU_POSTGRESQL_[A-Z]+_URL$/ {print $1}')
+$ heroku run sentry --config=sentry.conf.py migrate
 $ git push heroku master
 ```
 
