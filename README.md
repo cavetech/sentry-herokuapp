@@ -7,7 +7,7 @@ This is a starting point for running
 ## Instructions
 
 ```bash
-$ git https://github.com/grosskur/sentry-herokuapp
+$ git clone https://github.com/grosskur/sentry-herokuapp.git
 $ cd sentry-herokuapp
 $ heroku create your-sentry
 $ heroku addons:add heroku-postgresql:dev
