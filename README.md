@@ -4,6 +4,17 @@ This is a starting point for running
 [Sentry](https://github.com/getsentry/sentry "Sentry") on
 [Heroku](https://www.heroku.com/ "Heroku").
 
+## Instructions
+
+```bash
+$ git https://github.com/grosskur/sentry-herokuapp
+$ cd sentry-herokuapp
+$ heroku create your-sentry
+$ heroku addons:add heroku-postgresql:dev
+$ heroku pg:promote $(heroku config -s | awk -F= '$1 ~ /^HEROKU_POSTGRESQL_[A-Z]+_URL$/ {print $1}')
+$ git push heroku master
+```
+
 ## Features
 
 * Automatic database configuration via
