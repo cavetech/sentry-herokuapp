@@ -42,6 +42,10 @@ SENTRY_WEB_OPTIONS = {
     'workers': 3,
 }
 
+ALLOWED_HOSTS = [
+    '.herokuapp.com',
+]
+
 # Mail server configuration
 EMAIL_BACKEND = 'database_email_backend.backend.DatabaseEmailBackend'
 
